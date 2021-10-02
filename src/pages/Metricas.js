@@ -11,6 +11,7 @@ import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import App from '../components/Upvsdown'
 import Tophashtags from '../components/Tophashtags'
 import RecentPosts from '../components/RecentPosts'
+import Notifications from '../components/Notifications'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -97,6 +98,14 @@ export default function Metricas() {
           <div style={{ paddingTop: '5%' }}>
             <Typography variant="h4" >Entradas recientes</Typography>
             <RecentPosts />
+          </div>
+        </Grid>
+
+
+        <Grid item xs={12}>
+          <div style={{ paddingTop: '5%' }}>
+            <Typography variant="h4" >Notificaciones Pubsub</Typography>
+            <Notifications />
           </div>
         </Grid>
 

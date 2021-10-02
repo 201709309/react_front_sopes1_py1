@@ -9,7 +9,7 @@ export default function Tweets() {
 
         socket.on('datamysql', (data) => {
 
-            console.log(data.alltweets)
+            //console.log(data.alltweets)
             setTweets(data.alltweets)
         })
 
@@ -28,7 +28,7 @@ export default function Tweets() {
 
     useEffect(() => {
         socket.on('datamongo', (data) => {
-            console.log(data.alltweets)
+            //console.log(data.alltweets)
             setTweets(data.alltweets)
         })
     });
